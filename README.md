@@ -1,4 +1,4 @@
-# Turbidity Current (2D) in ANSYS — Mixture Model (A study for a potential second interview_
+# Turbidity Current (2D) in ANSYS — Mixture Model (A study for a potential second interview)
 
 > A minimal turbidity-current simulation (water + dilute sediment) with depth-averaged run-out analysis. Built for clarity in the topic.
 
