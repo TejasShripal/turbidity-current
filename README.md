@@ -38,7 +38,6 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 - **Element type:** Quad (2D shell elements)  
 - **Total elements:** ~30k → coarse but sufficient for a first test  
-- **Quality:** Skewness max ≈ 0.17, Orthogonal Quality min ≈ 0.96 (very good)  
 - **Notes:** Mesh is globally uniform; refinement near the bed would improve resolution of shear layers and near-wall transport.  
 
 ---
@@ -48,13 +47,12 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 - **General:** Pressure-Based, **Transient**, 2D, Gravity ON (Y = −9.81 m/s²)
 - **Operating Conditions:** Variable-Density → **User-Defined Operating Density = 1000 kg/m³**
 - **Models**
-  - **Viscous:** *Realizable k–ε*, Standard Wall Functions (Buoyancy production ON if available)
+  - **Viscous:** *Realizable k–ε*, Standard Wall Functions
   - **Multiphase:** **Mixture**
     - Primary: `water-liquid`
     - Secondary: `sediment` (custom material)
     - Drag: **Schiller–Naumann**
-    - **Algebraic Slip** ✅
-    - **Turbulent Dispersion** ✅
+    
 - **Materials**
   - `water-liquid`: ρ = 1000 kg/m³, μ = 1e−3 Pa·s
   - `sediment`: ρ = 2650 kg/m³ (no viscosity), **diameter = 1e−4 m** (100 µm)
