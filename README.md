@@ -1,4 +1,4 @@
-# Turbidity Current (2D) in ANSYS Fluent — Mixture Model
+# Turbidity Current (2D) in ANSYS — Mixture Model (A study for a potential second interview_
 
 > A minimal turbidity-current simulation (water + dilute sediment) with depth-averaged run-out analysis. Built for clarity in the topic.
 
