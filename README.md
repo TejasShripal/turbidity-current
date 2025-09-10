@@ -1,22 +1,21 @@
 # Turbidity Current (2D) in ANSYS Fluent — Mixture Model
 
-> A minimal, reproducible turbidity-current simulation (water + dilute sediment) with depth-averaged run-out analysis. Built for clarity in the topic.
+> A minimal turbidity-current simulation (water + dilute sediment) with depth-averaged run-out analysis. Built for clarity in the topic.
 
-<p align="center">
-  <img src="docs/cover_placeholder.png" width="85%" alt="Sediment volume fraction snapshot (placeholder)">
-</p>
-
+![Sediment front animation](docs/alpha_animation.gif)
 ---
 
 ## ✨ Overview
 
-This repository demonstrates a **2D turbidity current** in a water-filled channel with a shaped seabed. A **finite sediment pulse** enters at the left, collapses under gravity, and propagates as a density current along the bed. We compute the **front position** \(x_f(t)\) and the **run-out distance** \(x_r\) using a **depth-averaged** concentration.
+This repository demonstrates a **2D turbidity current** in a water-filled channel with a shaped seabed. A **finite sediment pulse** enters at the left, collapses under gravity, and propagates as a density current along the bed. We compute the **front position** \(x_f(t)\) and the **run-out distance** \(x_r\) using a **depth-averaged** concentration. 
+
+**Full run-out was not captured, the plume structure and sediment settling behaviour were visible and consistent with expectations. Requires a better domain, finer mesh, and better boundary conditions**
 
 - **Solver:** ANSYS **Fluent** (Pressure-based, transient)  
 - **Model:** **Mixture** multiphase; Primary = water, Secondary = sediment (dilute)  
 - **Dimensionality:** 2D (planar)  
 - **Goal metrics:** front trajectory \(x_f(t)\), run-out \(x_r\), qualitative structure (plume/core, shear layer)
--**Sediment behaviour:** although full run-out was not captured, the plume structure and sediment settling behaviour were visible and consistent with expectations.  
+-**Sediment behaviour:** although .  
 ---
 
 ## 🧩 Geometry & Mesh
@@ -87,17 +86,16 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 ## 📈 Post-Processing & Plots
 
-> Put your figures in `docs/` and link them below. Keep the legend range fixed across time for clean animations.
 
 ### Core plots
 - **Sediment volume fraction (Phase-2 α)**  
-  _Why:_ plume body & front
-> `docs/alpha_animation.gif`
+  _Why:_ plume body & front(ish)
+![Sediment front animation](docs/alpha_animation.gif)
 
 
 - **Velocity magnitude**  
-  _Why:_ frontal jet, shear layer intensity
-  > `docs/velocity_animation.gif`
+  _Why:_ frontal jet(ish), shear layer intensity
+![Sediment front animation](docs/velocity_animation.gif)
 ---
 ## 🧪 Limitations of this first solution
 
