@@ -23,7 +23,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 - Domain: 2D channel with a sloped seabed (rigid lid at top).
 - All dimensions in **meters**.
-- Mesh: quads; refine near the bed (edge **bias** in 2D).
+- Mesh: quads; refine near the bed (edge **bias** in 2D would be better).
 
 ### 📐 Mesh Statistics
 
