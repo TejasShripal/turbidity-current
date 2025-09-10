@@ -110,6 +110,3 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 - **Sediment processes:** include settling, deposition, and entrainment to track how currents evolve and fade.  
 - **Flow structures:** capture eddies that influence mixing and front speed.  
 - **Offshore structures:** add simplified foundations (e.g. monopiles, cables) and use fluid–structure interaction (FSI) to assess loads and risks. 
-
----
-
