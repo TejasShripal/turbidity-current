@@ -86,12 +86,12 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 ### Core plots
 - **Sediment volume fraction (Phase-2 α)**  
-  _Why:_ plume body & front(ish)
+  _GOAL:_ plume body & front(ish)
 ![Sediment front animation](docs/alpha_animation.gif)
 
 
 - **Velocity magnitude**  
-  _Why:_ frontal jet(ish), shear layer intensity
+  _GOAL:_ frontal jet(ish), shear layer intensity
 ![Sediment front animation](docs/velocity_animation.gif)
 ---
 ##  Limitations of this first solution
