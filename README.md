@@ -43,21 +43,20 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 ## Physics Setup (Fluent)
 
 - **General:** Pressure-Based, **Transient**, 2D, Gravity ON (Y = −9.81 m/s²)
-- **Operating Conditions:** Variable-Density → **User-Defined Operating Density = 1000 kg/m³**
-- **Models**
+- **Models used**
   - **Viscous:** *Realizable k–ε*, Standard Wall Functions
   - **Multiphase:** **Mixture**
-    - Primary: `water-liquid`
-    - Secondary: `sediment` (custom material)
+    - Primary: water-liquid
+    - Secondary: sediment (custom properties used due to lack of material in fluent database)
     - Drag: **Schiller–Naumann**
     
 - **Materials**
-  - `water-liquid`: ρ = 1000 kg/m³, μ = 1e−3 Pa·s
-  - `sediment`: ρ = 2650 kg/m³ (no viscosity), **diameter = 1e−4 m** (100 µm)
+  - water-liquid: ρ = 1000 kg/m³, μ = 1e−3 Pa·s
+  - sediment: ρ = 2650 kg/m³ (no viscosity), **diameter = 1e−4 m** (100 µm)
 
 **Boundaries**
 - **inlet_left (Velocity Inlet):**  
-  - Velocity: `U_in` (e.g., 0.10–0.20 m/s)  
+  - Velocity: 0.10–0.20 m/s
   - Turbulence: 5% intensity  
   - **Sediment vol. fraction** (Phase-2) = **0.01** (for the pulse)
 - **outlet_right (Pressure Outlet):** Backflow sediment = **0**
@@ -69,7 +68,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 - **Initialization:** **Hybrid Initialization** → domain fills with water; sediment = 0.
 - **Pulse plan:** inject sediment for **Tₚ** seconds, then switch to clear water.
-  - Example profile:
+  - For example:
     ```
     t=0–5 s:  α_s,in = 0.01 (1%)
     t>5 s:    α_s,in = 0.00
