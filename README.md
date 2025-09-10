@@ -76,8 +76,8 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
     ```
 - **Time stepping**
   - **Δt** = 0.002–0.005 s
-  - **Iterations/step:** 40–60 (use residual targets to exit early)
-  - **Discretization:** First-Order Upwind
+  - **Iterations/step:** 40–60
+  - **Discretization:** First-Order Upwind (Second-Order would be better but poor hardware)
   - **Coupling:** PISO
 
 
