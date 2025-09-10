@@ -5,7 +5,7 @@
 ![Sediment front animation](docs/alpha_animation.gif)
 ---
 
-## ✨ Overview
+## Overview
 
 This repository demonstrates a **2D turbidity current** in a water-filled channel with a shaped seabed. A **finite sediment pulse** enters at the left, collapses under gravity, and propagates as a density current along the bed. We compute the **front position** \(x_f(t)\) and the **run-out distance** \(x_r\) using a **depth-averaged** concentration. 
 
@@ -18,7 +18,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 -**Sediment behaviour:** although .  
 ---
 
-## 🧩 Geometry & Mesh
+## Geometry & Mesh
 
 - Domain: 2D channel with a sloped seabed (rigid lid at top).
 - All dimensions in **meters**.
@@ -42,7 +42,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 ---
 
-## ⚙️ Physics Setup (Fluent)
+## Physics Setup (Fluent)
 
 - **General:** Pressure-Based, **Transient**, 2D, Gravity ON (Y = −9.81 m/s²)
 - **Operating Conditions:** Variable-Density → **User-Defined Operating Density = 1000 kg/m³**
@@ -68,7 +68,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 ---
 
-## 🧪 Initial & Transient Controls
+## Initial & Transient Controls
 
 - **Initialization:** **Hybrid Initialization** → domain fills with water; sediment = 0.
 - **Pulse plan:** inject sediment for **Tₚ** seconds, then switch to clear water.
@@ -84,7 +84,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
   - **Coupling:** PISO
 
 
-## 📈 Post-Processing & Plots
+##  Post-Processing & Plots
 
 
 ### Core plots
@@ -97,7 +97,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
   _Why:_ frontal jet(ish), shear layer intensity
 ![Sediment front animation](docs/velocity_animation.gif)
 ---
-## 🧪 Limitations of this first solution
+##  Limitations of this first solution
 
 - **Mesh resolution:** relatively coarse, especially near the bed. Acceptable for a first run-out estimate, but finer grids would better capture shear layers, eddies, and near-bed transport.  
 - **Domain size:** too short to capture the full run-out — the front reaches the outlet early. A longer domain is needed for proper run-out measurement.   
@@ -108,7 +108,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 ---
 
 
-## 🚀 Possible Expansions (what I’d do with more compute)
+##  Possible Expansions (what I’d do with more compute)
 
 - **2D vs 3D models:** extend from simple 2D depth-averaged runs to full 3D to capture lateral spreading and structure–current interactions.  
 - **Higher resolution near the bed:** refine grids at the seabed to better resolve shear layers, eddies, and near-bed transport.  
