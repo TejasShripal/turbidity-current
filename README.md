@@ -23,8 +23,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 - Domain: 2D channel with a sloped seabed (rigid lid at top).
 - All dimensions in **meters**.
-- Mesh: quads preferred; refine near the bed (edge **bias** in 2D).
-- Quality (target): **Skewness < 0.3**, **Orthogonal Quality > 0.2**.
+- Mesh: quads; refine near the bed (edge **bias** in 2D).
 
 ### 📐 Mesh Statistics
 
@@ -38,8 +37,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 - **Element type:** Quad (2D shell elements)  
 - **Total elements:** ~30k → coarse but sufficient for a first test  
-- **Notes:** Mesh is globally uniform; refinement near the bed would improve resolution of shear layers and near-wall transport.  
-
+- **Notes:** Mesh is globally uniform; (Like mentioned earlier, refinement near the bed would improve resolution of shear layers and near-wall transport)  
 ---
 
 ## Physics Setup (Fluent)
