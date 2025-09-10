@@ -107,11 +107,11 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 
 ##  Possible Expansions (what I’d do with more compute)
 
-- **2D vs 3D models:** extend from simple 2D depth-averaged runs to full 3D to capture lateral spreading and structure–current interactions.  
+- **2D vs 3D models:** extend from simple 2D depth-averaged runs to full fully resolved 3D runs to capture lateral spreading and structure–current interactions.  
 - **Higher resolution near the bed:** refine grids at the seabed to better resolve shear layers, eddies, and near-bed transport.  
 - **Sediment processes:** include settling, deposition, and entrainment to track how currents evolve and fade.  
-- **Flow structures:** capture coherent eddies and interfacial instabilities that influence mixing and front speed.  
-- **Offshore structures:** add simplified foundations (e.g., monopiles, cables) and use fluid–structure interaction (FSI) to assess loads and risks. 
+- **Flow structures:** capture eddies that influence mixing and front speed.  
+- **Offshore structures:** add simplified foundations (e.g. monopiles, cables) and use fluid–structure interaction (FSI) to assess loads and risks. 
 
 ---
 
