@@ -7,7 +7,9 @@
 
 ## Overview
 
-This repository demonstrates a **2D turbidity current** in a water-filled channel with a shaped seabed. A **finite sediment pulse** enters at the left, collapses under gravity, and propagates as a density current along the bed. We compute the **front position** \(x_f(t)\) and the **run-out distance** \(x_r\) using a **depth-averaged** concentration. 
+This repository demonstrates a **2D turbidity current** in a water-filled channel with a shaped seabed. A **finite sediment pulse** enters at the left, collapses under gravity, and propagates as a density current along the bed. Intended to compute the **front position** and the **run-out distance** using a **depth-averaged** concentration. 
+
+> but
 
 **Full run-out was not captured, the plume structure and sediment settling behaviour were visible and consistent with expectations. Requires a better domain, finer mesh, and better boundary conditions**
 
