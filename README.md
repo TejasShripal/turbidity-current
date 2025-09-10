@@ -70,8 +70,8 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 - **Pulse plan:** inject sediment for **Tₚ** seconds, then switch to clear water.
   - For example:
     ```
-    t=0–5 s:  α_s,in = 0.01 (1%)
-    t>5 s:    α_s,in = 0.00
+    t=0–5 s:  volume fraction in = 0.01 (1%)
+    t>5 s:    volume fraction in = 0.00
     ```
 - **Time stepping**
   - **Δt** = 0.002–0.005 s
