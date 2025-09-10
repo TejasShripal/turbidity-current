@@ -89,7 +89,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 ![Sediment front animation](docs/alpha_animation.gif)
 
 
-- **Velocity magnitude**  
+- **Velocity magnitude (INCORRECT LEGEND - VELOCITY)**  
   _GOAL:_ frontal jet(ish), shear layer intensity
 ![Sediment front animation](docs/velocity_animation.gif)
 ---
