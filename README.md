@@ -93,21 +93,20 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
   _GOAL:_ frontal jet(ish), shear layer intensity
 ![Sediment front animation](docs/velocity_animation.gif)
 ---
+
 ##  Limitations of this first solution
 
-- **Mesh resolution:** relatively coarse, especially near the bed. Acceptable for a first run-out estimate, but finer grids would better capture shear layers, eddies, and near-bed transport.  
-- **Domain size:** too short to capture the full run-out - the front reaches the outlet early. A longer domain is needed for proper run-out measurement.   
-- **Inlet definition:** imposed as a simple step pulse; smoother profiles or better patching in a larger domain would represent realistic releases more faithfully.  
-- **Near-wall modelling:** simplified with no-slip walls; higher resolution or improved near-wall treatment would give more accurate shear stresses, deposition, and entrainment.  
-- **Sediment physics:** treated as a single dilute phase; no stratification or multiple size classes yet.  
-
+- **Mesh resolution:** relatively coarse, especially near the bed.
+- **Domain size:** too short to capture the full run-out because the front reaches the outlet early. A longer domain is needed for proper run-out measurement.   
+- **Inlet definition:** imposed as a simple step pulse; smoother profiles or better patching in a larger domain would represent realistic onset of the current. 
+- **Near-wall modelling:** simplified with no-slip walls;
 ---
 
 
 ##  Possible Expansions (what I’d do with more compute)
 
-- **2D vs 3D models:** extend from simple 2D depth-averaged runs to full fully resolved 3D runs to capture lateral spreading and structure–current interactions.  
-- **Higher resolution near the bed:** refine grids at the seabed to better resolve shear layers, eddies, and near-bed transport.  
+- **2D vs 3D models:** extend from simple 2D depth-averaged runs to better modeled / full fully resolved 3D runs to capture lateral spreading and structure–current interactions.  
+- **Higher resolution near the bed:** refine grids near the seabed to better resolve shear layers, eddies, and near-bed transport.  
 - **Sediment processes:** include settling, deposition, and entrainment to track how currents evolve and fade.  
 - **Flow structures:** capture eddies that influence mixing and front speed.  
 - **Offshore structures:** add simplified foundations (e.g. monopiles, cables) and use fluid–structure interaction (FSI) to assess loads and risks. 
