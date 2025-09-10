@@ -16,8 +16,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 - **Solver:** ANSYS **Fluent** (Pressure-based, transient)  
 - **Model:** **Mixture** multiphase; Primary = water, Secondary = sediment (dilute)  
 - **Dimensionality:** 2D (planar)  
-- **Goal metrics:** front trajectory \(x_f(t)\), run-out \(x_r\), qualitative structure (plume/core, shear layer)
--**Sediment behaviour:** although .  
+- **Goal metrics:** front trajectory, run-out, qualitative structure (plume/core, shear layer)
 ---
 
 ## Geometry & Mesh
