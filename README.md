@@ -1,4 +1,4 @@
-# Turbidity Current (2D) in ANSYS — Mixture Model (A study for a potential second interview)
+# Turbidity Current (2D) in ANSYS - Mixture Model
 
 > A minimal turbidity-current simulation (water + dilute sediment) with depth-averaged run-out analysis. Built for clarity in the topic.
 
@@ -97,7 +97,7 @@ This repository demonstrates a **2D turbidity current** in a water-filled channe
 ##  Limitations of this first solution
 
 - **Mesh resolution:** relatively coarse, especially near the bed. Acceptable for a first run-out estimate, but finer grids would better capture shear layers, eddies, and near-bed transport.  
-- **Domain size:** too short to capture the full run-out — the front reaches the outlet early. A longer domain is needed for proper run-out measurement.   
+- **Domain size:** too short to capture the full run-out - the front reaches the outlet early. A longer domain is needed for proper run-out measurement.   
 - **Inlet definition:** imposed as a simple step pulse; smoother profiles or better patching in a larger domain would represent realistic releases more faithfully.  
 - **Near-wall modelling:** simplified with no-slip walls; higher resolution or improved near-wall treatment would give more accurate shear stresses, deposition, and entrainment.  
 - **Sediment physics:** treated as a single dilute phase; no stratification or multiple size classes yet.  
